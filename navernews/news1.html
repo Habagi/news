@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+}
+a{text-decoration: none;}
+.wrap {
+    position: relative;
+    height: 100%;
+    min-width: 1152px;
+}
+header {
+    position: absolute;
+    top: 0;
+    zoom: 1;
+    width: 100%;
+    height: 56px;
+    padding-top: 5px;
+    background: url(http://static.naver.net/newsstand/img/20121231/bg_hd.png) 0 0 repeat-x;
+}
+.h1 {
+    float: left;
+    display: inline-block;
+    margin: 0 0 0 14px;
+}
+h1 {
+    display: inline-block;
+    overflow: hidden;
+    width: 118px;
+    height: 30px;
+    background: url(http://static.naver.net/newsstand/img/20140716/sp_nwstd.png) 2px -82px no-repeat;
+    line-height: 999px;
+}
+.msg_h1 {
+    float: left;
+    display: inline-block;
+    overflow: hidden;
+    height: 30px;
+    width:250px;
+    background: url(http://static.naver.net/newsstand/img/20140716/sp_nwstd.png) -116px -82px no-repeat;
+    line-height: 999px;
+}
+#lnb {
+    overflow: hidden;
+    zoom: 1;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    width: 174px;
+    margin-left: -87px;
+}
+#lnb a {
+    width: 87px;
+    background: url(http://static.naver.net/newsstand/img/20140716/sp_nwstd.png) -1px -116px no-repeat;
+}
+#lnb a, #lnb strong {
+    overflow: hidden;
+    height: 30px;
+    display: inline-block;
+    float: left;
+    line-height: 999px;
+}
+#lnb a + strong a, #lnb a + strong a:hover, #lnb a + strong a:focus {
+    background: url(http://static.naver.net/newsstand/img/20140716/sp_nwstd.png) -88px -150px no-repeat;
+}
+.opt {
+    float: right;
+    padding: 5px 9px 0 0;
+}
+.opt .bar:first-child {
+    margin-right: 10px;
+}
+.opt .bar {
+    overflow: hidden;
+    display: inline-block;
+    width: 2px;
+    height: 20px;
+    margin: 0 6px;
+    background: url(http://static.naver.net/newsstand/img/20140716/sp_nwstd.png) -244px -150px no-repeat;
+    line-height: 999px;
+    vertical-align: top;
+}
+.opt .btn_rfsh {
+    overflow: hidden;
+    display: inline-block;
+    width: 66px;
+    height: 21px;
+    background: url(http://static.naver.net/newsstand/img/20140716/sp_nwstd.png) -252px -150px no-repeat;
+    line-height: 999px;
+    vertical-align: top;
+}
+.opt .btn_stt {
+    overflow: hidden;
+    display: inline-block;
+    width: 46px;
+    height: 21px;
+    background: url(http://static.naver.net/newsstand/img/20140716/sp_nwstd.png) -332px -150px no-repeat;
+    line-height: 999px;
+    vertical-align: top;
+}
+.opt a.btn_naver {
+    overflow: hidden;
+    display: inline-block;
+    width: 60px;
+    height: 21px;
+    background: url(http://static.naver.net/newsstand/img/20140716/sp_nwstd.png) -536px -272px no-repeat;
+    line-height: 999px;
+    vertical-align: top;
+}
+.gnb_wrap {
+    float: right;
+    margin: -1px -2px 0 0;
+}
+#gnb {
+    position: relative;
+    z-index: 2147483646;
+    font-family: '나눔고딕',NanumGothic,'돋움',Dotum,'Apple SD Gothic Neo',Helvetica,Sans-serif !important;
+    color: #444;
+    font-size: 12px;
+    letter-spacing: 0 !important;
+    line-height: normal !important;
+    text-align: left !important;
+}
+#gnb .blind {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    top: -1000em;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+}
+#gnb ul {
+    list-style: none;
+}
+</style>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <a href="#" class="h1">
+                <h1>뉴스스탠드</h1>
+            </a>
+            <p class="msg_h1">
+                뉴스스탠드 기사는 각 언론사에서 직접 편집합니다.
+            </p>
+            <div id="lnb" class="press_on">
+                <a href="#" id="my_tab">My 뉴스</a>
+                <strong>
+                    <a href="#" id="all_tab">전체언론사</a>
+                </strong>
+            </div>
+            <div class="opt">
+                <span class="bar">|</span>
+                <a href="#" class="btn_rfsh">새로고침</a>
+                <span class="bar">|</span>
+                <a href="#" class="btn_stt">설정</a>
+                <span class="bar">|</span>
+                <a href="#" class="btn_naver">네이버</a>
+            </div>
+            <div class="gnb_wrap">
+                <div id="gnb">
+                    <strong class="blind">사용자링크</strong>
+                    <ul class="gnb_lst" id="gnb_lst">
+                        <li class="gnb_login_li"></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+    </div>
+</body>
+</html>
